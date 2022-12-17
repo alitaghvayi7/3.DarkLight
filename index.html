@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2c550ad0a3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <title>Dark And Light Mode</title>
+</head>
+
+<body>
+    <main class="container">
+        <!-- Dark Mode Switch -->
+
+        <nav class="navbar">
+            <ul class="menu">
+                <a class="nav-link" href="">home</a>
+                <a class="nav-link" href="">about</a>
+                <a class="nav-link" href="">projects</a>
+                <a class="nav-link" href="">contact</a>
+            </ul>
+            <div class="theme-switch-wrapper">
+                <span id="toggle-icon">
+                    <span class="toggle-text">Light Mode</span>
+                    <i class="fas fa-sun"></i>
+                </span>
+                <label class="theme-switch">
+                    <input type="checkbox">
+                    <div class="slider round"></div>
+                </label>
+            </div>
+        </nav>
+        <header class="section header">
+            <h2 class="header-title">custom title here</h2>
+            <p class="header-sub-title">wellcome to your website !</p>
+        </header>
+        <section class="section illustration-section">
+            <h2 class="header-title">undraw illustrations</h2>
+            <div class="illustration-card-container">
+                <div class="illustration-card-item">
+                    <h3 class="illustration-card-title">high concept</h3>
+                    <img id="image1" class="illustration-card-img" src="img/undraw_conceptual_idea_light.svg" alt="">
+                </div>
+                <div class="illustration-card-item">
+                    <h3 class="illustration-card-title">web innovation</h3>
+                    <img id="image2" class="illustration-card-img" src="img/undraw_proud_coder_light.svg" alt="">
+                </div>
+                <div class="illustration-card-item">
+                    <h3 class="illustration-card-title">problem solving</h3>
+                    <img id="image3" class="illustration-card-img" src="img/undraw_feeling_proud_light.svg" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="section projects-container">
+            <h2 class="header-title">buttons</h2>
+            <div class="buttons-container">
+                <button class="primary">primary</button>
+                <button class="secondary">secondary</button>
+                <button class="outline">outline</button>
+                <button class="secondary outline">alt outline</button>
+                <button class="outline" disabled>disabled</button>
+            </div>
+            <p class="text-box" id="text-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nemo
+                doloribus perferendis dicta, quibusdam quaerat corporis distinctio minus facilis eligendi neque
+                voluptate doloremque at ea aliquid adipisci placeat debitis soluta odio rem animi!</p>
+        </section>
+        <section class="section contact-section">
+            <div class="social-icons">
+                <i class="fab fa-github"></i>
+                <i class="fab fa-codepen"></i>
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-medium"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
