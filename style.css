@@ -33,18 +33,16 @@
   font-family: "Oswald", sans-serif;
 }
 
-html{
-    transition: all ,5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
 body {
   overflow-x: hidden;
+  width: 100vw;
 }
 
 
 
 .container {
-  width: 100vw;
+  width: 100%;
+  overflow-x: hidden;
   background-color: var(--background);
   color: var(--on-background);
   scroll-snap-type: y mandatory;
@@ -163,6 +161,16 @@ a:focus {
     align-items: center;
     justify-content: center;
     gap: 2rem;
+}
+
+.buttons-container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 button {
@@ -292,14 +300,14 @@ button:hover:not(.outline) {
   }
   
   .slider::before {
+    display: block;
     background: #fff;
-    bottom: 2px;
     content: "";
     height: 1.8rem;
-    left: 2px;
     position: absolute;
     transition: 0.4s;
     width: 1.8rem;
+    top: 1px;
   }
   
   input:checked + .slider {
@@ -339,9 +347,12 @@ button:hover:not(.outline) {
         font-size: 1.2rem;
     }
     .header-title{
-        font-size: 5rem;
+        font-size: 4.5rem;
     }
     .illustration-card-container {
         flex-wrap: wrap;
+    }
+    .text-box{
+      width: 95%;
     }
 }
